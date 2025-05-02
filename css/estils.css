@@ -1,0 +1,95 @@
+/* Colors base per a temàtica vegana */
+:root {
+    --verd-fosc: #2e7d32;
+    --verd-clar: #66bb6a;
+    --verd-suau: #c8e6c9;
+    --gris-suau: #f5f5f5;
+    --text: #333;
+}
+
+/* Cos general */
+body {
+    background-color: var(--gris-suau);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Títols */
+h1, h2, h3 {
+    color: var(--verd-fosc);
+    text-align: center;
+}
+
+/* Botons i enllaços */
+a, button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--verd-clar);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a:hover, button:hover {
+    background-color: var(--verd-fosc);
+}
+
+/* Formularis */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Taules */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--verd-clar);
+    color: white;
+}
+
+tr:hover {
+    background-color: var(--verd-suau);
+}
+
+/* Missatges centrats */
+.centered {
+    text-align: center;
+    margin-top: 40px;
+}
