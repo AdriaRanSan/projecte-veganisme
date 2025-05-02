@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
 <h2>Editar producte</h2>
+ <!-- Formulari per a editar els productes -->
 <form method="post">
     Nom: <input type="text" name="nom" value="<?= htmlspecialchars($producte['nom']) ?>" required><br>
     Descripció: <textarea name="descripcio" required><?= htmlspecialchars($producte['descripcio']) ?></textarea><br>
