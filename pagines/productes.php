@@ -8,6 +8,7 @@ if (!isset($_SESSION['usuari_id'])) {
 }
 
 $conn = connectaBD();
+//Enllaça els productes en les categories en la BBDD
 $stmt = $conn->query("
     SELECT p.id, p.nom, p.descripcio, p.preu, c.nom AS categoria
     FROM productes p
@@ -38,6 +39,7 @@ $productes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </tr>
     </thead>
     <tbody>
+        <!-- Recorreguem la ARRAY per a extraure els datos de la tabla productes -->
         <?php foreach ($productes as $prod): ?>
         <tr>
             <td><?= htmlspecialchars($prod['nom']) ?></td>
